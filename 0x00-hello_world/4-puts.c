@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 /*this program uses the puts function to print to the console*/
 int main(void)
 {
