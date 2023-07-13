@@ -1,7 +1,10 @@
 #include <stdio.h>
 
-
-/*this program uses the puts function to print to the console*/
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 char myString[] = "\"Programming is like building a multilingual puzzle";
