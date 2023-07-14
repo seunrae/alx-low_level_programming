@@ -20,4 +20,5 @@ putchar(firstNum);
 putchar('0' + i);
 }
 putchar('\n');
+return (0);
 }
