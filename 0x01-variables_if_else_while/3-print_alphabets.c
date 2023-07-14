@@ -16,5 +16,5 @@ for (i = 0; i <= length - 1; i++)
 putchar(a[i]);
 }
 putchar('\n');
-return(0);
+return (0);
 }
