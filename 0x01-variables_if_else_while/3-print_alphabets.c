@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 /**
  * main - Entry point
@@ -7,5 +8,13 @@
  */
 int main(void)
 {
+char a[54] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+int length = strlen(a);
+int i;
+for (i = 0; i <= length - 1; i++)
+{
+putchar(a[i]);
+}
+putchar('\n');
 return(0);
 }
