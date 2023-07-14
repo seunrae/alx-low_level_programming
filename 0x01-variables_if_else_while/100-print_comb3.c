@@ -7,18 +7,25 @@
  */
 int main(void)
 {
-int i; 
-int firstNum = '0' + 0;
-for (i = 1; i < 10; i++)
-{
-	if (i > 1 && i < 10)
+int i = '0';
+int j = '0';
+	for (i = '0'; i < '9'; i++)
 	{
-	putchar(',');
-	putchar(' ');
+		for(j = '0'; j < '9'; j++)
+		{
+			if (!((i == j) || (j == i)))
+			{
+			putchar(i);
+			putchar(j);
+				if(!(i == '9' && j == '8'))
+				{
+				putchar(',');
+				putchar(' ');
+				}
+			}
+		}	
+	
 	}
-putchar(firstNum);
-putchar('0' + i);
-}
 putchar('\n');
 return (0);
 }
