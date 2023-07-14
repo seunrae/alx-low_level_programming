@@ -1,5 +1,7 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
+#include <string.h>
 /**
  * main - Entry point
  *
@@ -7,5 +9,33 @@
  */
 int main(void)
 {
-return(0);
+int n;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+char nString[20];
+sprintf(nString , "%d" , n);
+int length = strlen(nString);
+char chNum = nString[length - 1];
+int lastNumber = chNum - '0';
+if (n < 0)
+{
+	if(lastNumber == 0)
+	{
+	printf("Last digit of %d is %d and is 0\n", n, lastNumber);
+	}
+printf("Last digit of %d is -%d and is less than 6 and not 0\n", n, lastNumber);
+}
+else if (lastNumber > 5)
+{
+printf("Last digit of %d is %d and is greater than 5\n", n, lastNumber);
+}
+else if (lastNumber == 0)
+{
+printf("Last digit of %d is %d and is 0\n", n, lastNumber);
+}
+else if (lastNumber < 6 && lastNumber != 0)
+{
+printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastNumber);
+}
+return (0);
 }
