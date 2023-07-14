@@ -11,12 +11,15 @@ int main(void)
 {
 int n;
 char nString[20];
-int length = strlen(nString);
-char chNum = nString[length - 1];
-int lastNumber = chNum - '0';
+int length;
+char chNum;
+int lastNumber;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 sprintf(nString , "%d" , n);
+length = strlen(nString);
+chNum = nString[length - 1];
+lastNumber = chNum - '0';
 if (n < 0)
 {
 	if(lastNumber == 0)
