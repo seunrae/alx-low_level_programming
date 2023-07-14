@@ -10,11 +10,11 @@ int main(void)
 int i = '0';
 int j = '0';
 int k = '0';
-	for (k = '0'; k < '9'; k++)
+	for (k = '0'; k <= '9'; k++)
 	{
-		for (j = '0'; j < '9'; j++)
+		for (j = '0'; j <= '9'; j++)
 		{
-			for (i = '0'; i < '9'; i++)
+			for (i = '0'; i <= '9'; i++)
 			{
 				if (!((i == j) || (j == k) || (j > i) || (k > j)))
 				{
