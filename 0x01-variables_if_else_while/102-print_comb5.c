@@ -27,6 +27,6 @@ int i, j;
 			}
 		}
 	}
-purchar('\n');
+putchar('\n');
 return (0);
 }
