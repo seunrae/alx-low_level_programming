@@ -1,13 +1,13 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
- * main - check the code
- *
+ * add - check the code
+ * @a: input parameter
+ * @b: input parameter
  * Return: Always 0.
  */
-
-int main(void)
+int add(int a, int b)
 {
-
-return (0);
+int res = a + b;
+return (res);
 }
