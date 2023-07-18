@@ -13,7 +13,7 @@ int i, j, result;
 	}
 	else if (n == 0)
 	{
-	printf("0 \n");
+	printf("0\n");
 	}
 	else
 	{
