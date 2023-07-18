@@ -11,9 +11,10 @@ int print_last_digit(int n)
 char nString[20];
 int length;
 char lastnum;
+int last;
 sprintf(nString, "%d", n);
 length = strlen(nString);
 lastnum = nString[length - 1];
-int last = lastnum + '\0';
+last = lastnum + '\0';
 return (last);
 }
