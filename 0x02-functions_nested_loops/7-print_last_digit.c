@@ -16,9 +16,3 @@ length = strlen(nString);
 lastnum = nString[length - 1];
 return (lastnum);
 }
-int main(void)
-{
-int res = print_last_digit(-1024);
-putchar(res);
-return (0);
-}
