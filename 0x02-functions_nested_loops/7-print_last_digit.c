@@ -16,5 +16,6 @@ sprintf(nString, "%d", n);
 length = strlen(nString);
 lastnum = nString[length - 1];
 last = lastnum - '0';
+_putchar(last);
 return (last);
 }
