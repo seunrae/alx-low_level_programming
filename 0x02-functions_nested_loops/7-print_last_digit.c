@@ -16,11 +16,7 @@ sprintf(nString, "%d", n);
 length = strlen(nString);
 lastnum = nString[length - 1];
 last = lastnum - '0';
-putchar(last);
+
+putchar(last + '0');
 return (last);
 }
-int main(void){
-int res = print_last_digit(98);
-putchar(res + '0');
-}
-
