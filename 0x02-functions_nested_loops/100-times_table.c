@@ -26,11 +26,11 @@ int i, j, result;
                         	{
                                 	if (j == n)
                                 	{
-                                	printf("%3d", result);
+                                	printf("%4d", result);
                                 	}
                                 	else
                                 	{
-                                	printf("%3d,", result);
+                                	printf("%4d,", result);
                                 	}
                         	}
                 	}
