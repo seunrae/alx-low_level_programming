@@ -1,13 +1,18 @@
-#include <stdio.h>
-
+#include "main.h"
+#include <ctype.h>
 /**
- * main - check the code
+ * _islower - check the code
  *
  * Return: Always 0.
  */
-
-int main(void)
+int _islower(int c)
 {
-
-return (0);
+	if (islower(c))
+	{
+	return 1;
+	}
+	else
+	{
+	return 0;
+	}
 }
