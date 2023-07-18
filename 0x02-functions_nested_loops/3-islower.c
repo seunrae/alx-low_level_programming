@@ -2,7 +2,7 @@
 #include <ctype.h>
 /**
  * _islower - check the code
- * @c - character parameter to be checked
+ * @c: character parameter to be checked
  * Return: Always 0.
  */
 int _islower(int c)
