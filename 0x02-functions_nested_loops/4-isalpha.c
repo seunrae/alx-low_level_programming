@@ -1,13 +1,20 @@
+#include "main.h"
+#include <ctype.h>
 #include <stdio.h>
-
 /**
- * main - check the code
- *
+ * _isalpha - check the code
+ * @c: input parameter
  * Return: Always 0.
  */
 
-int main(void)
+int _isalpha(int c)
 {
-
-return (0);
+	if (isalpha(c))
+	{
+	return (1);
+	}
+	else
+	{
+	return (0);
+	}
 }
