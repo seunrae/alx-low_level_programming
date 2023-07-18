@@ -1,5 +1,6 @@
 #include <unistd.h>
 #include "main.h"
+#include <string.h>
 /**
  * main - check the code
  *
@@ -11,7 +12,7 @@ int main(void)
 {
 char str[8] = "_putchar";
 int i = 0;
-	while (str != "\0")
+	while (strcmp(str, "\0") != 0)
 	{
 	_putchar(str[i]);
 	i++;	
