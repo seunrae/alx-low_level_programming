@@ -13,7 +13,7 @@ int i, j, result;
 	}
 	else if (n == 0)
 	{
-	printf("0 ");
+	printf("0 \n");
 	}
 	else
 	{
@@ -24,21 +24,21 @@ int i, j, result;
 			result = i * j;
 				if (j == 0)
 				{
-                        	printf("%d,", result);
-                        	}
-                        	else
-                        	{
-                                	if (j == n)
-                                	{
-                                	printf("%4d", result);
-                                	}
-                                	else
-                                	{
-                                	printf("%4d,", result);
-                                	}
-                        	}
-                	}
-        	printf("\n");
-        	}
+				printf("%d,", result);
+				}
+				else
+				{
+					if (j == n)
+					{
+					printf("%4d", result);
+					}
+					else
+					{
+					printf("%4d,", result);
+					}
+				}
+			}
+		printf("\n");
+		}
 	}
 }
