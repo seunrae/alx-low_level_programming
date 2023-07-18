@@ -1,13 +1,25 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
- * main - check the code
- *
+ * print_sign - check the code
+ * @n: input parameter
  * Return: Always 0.
  */
-
-int main(void)
+int print_sign(int n)
 {
-
-return (0);
+	if (n > 0)
+	{
+	putchar('+');
+	return (1);
+	}
+	else if (n < 0)
+	{
+	putchar('-');
+	return (-1);
+	}
+	else
+	{
+	putchar(0 + '0');
+	return (0);
+	}
 }
