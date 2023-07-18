@@ -11,6 +11,10 @@ int i, j, result;
 	if (n > 15)
 	{
 	}
+	else if (n == 0)
+	{
+	printf("0");
+	}
 	else
 	{
 		for (i = 0; i <= n; i++)
@@ -37,5 +41,4 @@ int i, j, result;
         	printf("\n");
         	}
 	}
-	
 }
