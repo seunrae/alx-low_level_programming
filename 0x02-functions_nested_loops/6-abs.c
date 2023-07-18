@@ -2,11 +2,12 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * main - check the code
+ * _abs - check the code
  * @n: input parameter
  * Return: Always 0.
  */
 int _abs(int n)
 {
-return abs(n);
+int num = abs(n);
+return (num);
 }
