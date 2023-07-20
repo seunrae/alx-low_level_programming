@@ -2,17 +2,35 @@
 #include <stdio.h>
 
 /**
- * main - check the code.
- *
+ * print_triangle - check the code.
+ * @size: input parameter
  * Return: Always 0.
  */
-int main(void)
+void print_triangle(int size)
 {
-    char c;
-
-    c = 'A';
-    printf("%c: %d\n", c, _isupper(c));
-    c = 'a';
-    printf("%c: %d\n", c, _isupper(c));
-    return (0);
+int i = 1, j, hash;
+	if (size <= 0)
+	{
+	_putchar('\n');
+	}
+	else
+	{
+		while (i <= size)
+		{
+		j = size - i;
+		hash = 1;
+			while (j >= 1)
+			{
+			_putchar(' ');
+			j--;
+			}
+			while (hash <= i)
+			{
+			_putchar('#');
+			hash++;
+			}
+		_putchar('\n');
+		i++;
+		}
+	}
 }
