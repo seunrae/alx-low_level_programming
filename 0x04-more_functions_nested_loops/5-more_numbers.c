@@ -8,25 +8,20 @@
  */
 void more_numbers(void)
 {
-int i = 0, j, k;
-int firstnum, secondnum;
+int i = 0, j;
 	while (i <= 10)
 	{
 	j = 0;
-	k = 10;
-		while (j < 10)
+		while (j < 15)
 		{
-		_putchar(j + '0');
+			if (j > 9)
+			{
+			_putchar(j / 10 + '0');
+			}
+		_putchar(j % 10 + '0');
 		j++;
 		}
-		while (k < 15)
-		{
-		firstnum = k / 10;
-		secondnum = k % 10;
-		_putchar(firstnum + '0');
-		_putchar(secondnum + '0');
-		k++;
-		}
+	_putchar('\n');
 	i++;
 	}
 }
