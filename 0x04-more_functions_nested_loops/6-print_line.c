@@ -2,17 +2,24 @@
 #include <stdio.h>
 
 /**
- * main - check the code.
- *
+ * print_line - check the code.
+ * @n: input parameter
  * Return: Always 0.
  */
-int main(void)
+void print_line(int n)
 {
-    char c;
-
-    c = 'A';
-    printf("%c: %d\n", c, _isupper(c));
-    c = 'a';
-    printf("%c: %d\n", c, _isupper(c));
-    return (0);
+int i = 0;
+	if (n <= 0)
+	{
+	_putchar('\n');
+	}
+	else
+	{
+		while (i < n)
+        	{
+        	_putchar('_');
+		i++;
+        	}
+	}
+_putchar('\n');
 }
