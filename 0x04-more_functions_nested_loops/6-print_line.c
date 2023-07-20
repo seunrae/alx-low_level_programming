@@ -20,5 +20,6 @@ int i = 0;
 		_putchar('_');
 		i++;
 		}
+	_putchar('\n');
 	}
 }
