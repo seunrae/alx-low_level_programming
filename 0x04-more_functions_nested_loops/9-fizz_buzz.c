@@ -8,11 +8,27 @@
  */
 int main(void)
 {
-    char c;
-
-    c = 'A';
-    printf("%c: %d\n", c, _isupper(c));
-    c = 'a';
-    printf("%c: %d\n", c, _isupper(c));
-    return (0);
+int i = 1;
+	while (i <= 100)
+	{
+		if (i % 3 == 0 && i % 5 == 0)
+		{
+		printf("FizzBuzz ");
+		}
+		else if (i % 5 == 0)
+		{
+		printf("Buzz ");
+		}
+		else if (i % 3 == 0)
+		{
+		printf("Fizz ");
+		}
+		else
+		{
+		printf("%d ", i);
+		}
+	i++;
+	}
+printf("\n");
+return (0);
 }
