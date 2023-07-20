@@ -2,17 +2,29 @@
 #include <stdio.h>
 
 /**
- * main - check the code.
- *
+ * print_square - check the code.
+ * @size: input parameter
  * Return: Always 0.
  */
-int main(void)
+void print_square(int size)
 {
-    char c;
-
-    c = 'A';
-    printf("%c: %d\n", c, _isupper(c));
-    c = 'a';
-    printf("%c: %d\n", c, _isupper(c));
-    return (0);
+int i = 0, j;
+	if (size <= 0)
+	{
+	_putchar('\n');
+	}
+	else
+	{
+		while (i < size)
+		{
+		j = 0;
+			while (j < size)
+			{
+			_putchar('#');
+			j++;
+			}
+		_putchar('\n');
+		i++;
+		}
+	}
 }
