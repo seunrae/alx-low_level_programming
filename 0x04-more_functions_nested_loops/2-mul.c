@@ -2,17 +2,14 @@
 #include <stdio.h>
 
 /**
- * main - check the code.
- *
- * Return: Always 0.
+ * mul - check the code.
+ * @a: input parameter
+ * @b: input parameter
+ * Return: res product of a and b.
  */
-int main(void)
-{
-    char c;
 
-    c = 'A';
-    printf("%c: %d\n", c, _isupper(c));
-    c = 'a';
-    printf("%c: %d\n", c, _isupper(c));
-    return (0);
+int mul(int a, int b)
+{
+int res = a * b;
+return (res);
 }
