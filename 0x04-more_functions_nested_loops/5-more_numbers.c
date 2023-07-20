@@ -27,7 +27,6 @@ int firstnum, secondnum;
 		_putchar(secondnum + '0');
 		k++;
 		}
-	printf("\n");
 	i++;
 	}
 }
