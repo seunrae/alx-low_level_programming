@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - check the code.
- *
- * Return: Always 0.
+ * _isupper - check the code.
+ * Return: 0 or 1
+ * @c: input parameter
  */
 
 int _isupper(char c)
