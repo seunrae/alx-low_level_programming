@@ -2,17 +2,33 @@
 #include <stdio.h>
 
 /**
- * main - check the code.
- *
+ * print_diagonal - check the code.
+ * @n: input parameter
  * Return: Always 0.
  */
-int main(void)
+void print_diagonal(int n)
 {
-    char c;
-
-    c = 'A';
-    printf("%c: %d\n", c, _isupper(c));
-    c = 'a';
-    printf("%c: %d\n", c, _isupper(c));
-    return (0);
+int i, j;
+	if (n <= 0)
+	{
+	_putchar('\n');
+	}
+	else
+	{
+		for (i = 0; i < n; i++)
+		{
+			for (j = 0; j < n; j++)
+			{
+				if (i == j)
+				{
+				_putchar('\\');
+				}
+				else
+				{
+				_putchar(' ');
+				}
+			}
+		_putchar('\n');
+		}
+	}
 }
