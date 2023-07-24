@@ -1,12 +1,20 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <string.h>
 /**
- * main - check the code 
+ * rev_string - check the code
  *
- * Return: Always 0.
+ * @s: input parameter
  */
-int main(void)
+
+void rev_string(char *s)
 {
-return (0);
+int i, j;
+char value;
+	for (i = 0, j = strlen(s) - 1; i < j; i++, j--)
+	{
+	value = s[i];
+	s[i] = s[j];
+	s[j] = value;
+	}
 }
