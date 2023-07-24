@@ -1,12 +1,27 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <string.h>
 /**
- * main - check the code 
+ * puts_half - check the code
  *
- * Return: Always 0.
+ * @str: input parameter
  */
-int main(void)
+void puts_half(char *str)
 {
-return (0);
+size_t i;
+	if (strlen(str) % 2 != 0)
+	{
+		for (i = strlen(str) - 1 / 2; i < strlen(str); i++)
+		{
+		_putchar(*(str + i));
+		}
+	}
+	else
+	{
+		for (i = strlen(str) / 2; i < strlen(str); i++)
+		{
+		_putchar(*(str + i));
+		}
+	}
+_putchar('\n');
 }
