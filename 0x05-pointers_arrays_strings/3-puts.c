@@ -1,12 +1,16 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <string.h>
 /**
- * main - check the code 
- *
- * Return: Always 0.
+ * _puts - check the code
+ * @str: input parameter
  */
-int main(void)
+void _puts(char *str)
 {
-return (0);
+size_t i;
+	for (i = 0; i < strlen(str); i++)
+	{
+	_putchar(*(str + i));
+	}
+_putchar('\n');
 }
