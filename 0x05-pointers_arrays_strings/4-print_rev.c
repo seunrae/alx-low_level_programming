@@ -2,14 +2,14 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * main - check the code 
+ * print_rev - check the code
  *
- * Return: Always 0.
+ * @s: input parameter
  */
 void print_rev(char *s)
 {
 int i;
-	for (i = strlen(s)-1; i >= 0; i--)
+	for (i = strlen(s) - 1; i >= 0; i--)
 	{
 	_putchar(*(s + i));
 	}
