@@ -12,7 +12,7 @@ char *ptr = str;
 char alphaset1[52] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 char alphaset2[52] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 int i;
-	while (*ptr != '\n')
+	while (*ptr != '\0')
 	{
 		for (i = 0; i < 52; i++)
 		{
