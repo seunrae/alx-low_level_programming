@@ -2,9 +2,10 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _strcmp - function to compare strings based on their lexicographical order
+ * @s1: input parameter
+ * @s2: input parameter
+ * Return: difference between the ascii values of the string
  */
 int _strcmp(char *s1, char *s2)
 {
