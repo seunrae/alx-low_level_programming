@@ -1,12 +1,23 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <math.h>
 /**
- * main - check the code
+ * print_number - check the code
  *
- * Return: Always 0.
+ * @n: input parameter
  */
-int main(void)
+void print_number(int n)
 {
-return (0);
+unsigned int num;
+num = n;
+	if (n < 0)
+	{
+	_putchar('-');
+	num = -n;
+	}
+	if (num / 10 != 0)
+	{
+	print_number(num / 10);
+	}
+	_putchar((num % 10) + '0');
 }
