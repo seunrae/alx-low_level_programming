@@ -2,8 +2,9 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * main - check the code
- *
+ * _strspn - check the code
+ * @s: input parameter
+ * @accept: input parameter
  * Return: Always 0.
  */
 unsigned int _strspn(char *s, char *accept)
