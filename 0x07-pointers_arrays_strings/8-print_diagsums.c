@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ * print_diagsums - check the code
+ * @a: input parameter
+ * @size: input parameter
  * Return: Always 0.
  */
 void print_diagsums(int *a, int size)
