@@ -7,10 +7,11 @@
  */
 int main(int argc, char *argv[])
 {
-	if (argc < 1)
+int i;
+	while (i < argc)
 	{
-	printf("No arguements");
+	printf("%s\n", argv[i]);
+	i++;
 	}
-printf("%s\n", argv[0]);
 return (0);
 }
