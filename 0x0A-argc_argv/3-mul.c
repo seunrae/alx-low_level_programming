@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - check the code
  * @argc: number of arguments
@@ -7,10 +8,20 @@
  */
 int main(int argc, char *argv[])
 {
-	if (argc < 1)
+int sum = 1;
+int i;
+	if (argc > 1)
 	{
-	printf("No arguements");
+		for (i = 1; i < argc; i++)
+		{
+		sum = sum * atoi(argv[i]);
+		}
 	}
-printf("%s\n", argv[0]);
+	else
+	{
+	printf("Error\n");
+	return (1);
+	}
+printf("%d\n", sum);
 return (0);
 }
