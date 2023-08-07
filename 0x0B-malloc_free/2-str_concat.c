@@ -19,7 +19,7 @@ char *ptr;
 	{
 	s2 = "";
 	}
-ptr = malloc((strlen(s1) + strlen(s2) + 1) + sizeof(char));
+ptr = malloc((strlen(s1) + strlen(s2)) + 1);
 	if (ptr == NULL)
 	{
 	return (NULL);
