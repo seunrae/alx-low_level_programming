@@ -16,7 +16,7 @@ size_t i;
 	{
 	return (NULL);
 	}
-ptr = malloc((strlen(str)) * sizeof(char));
+ptr = malloc((strlen(str) + 1) * sizeof(char));
 	if (ptr == NULL)
 	{
 	return (NULL);
