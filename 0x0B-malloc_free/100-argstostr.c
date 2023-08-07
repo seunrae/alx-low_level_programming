@@ -10,12 +10,17 @@
  */
 char *argstostr(int ac, char **av)
 {
-int i, pos = 0;
-char *ch = malloc(ac * sizeof(char *));
+int i, pos = 0, totalLength = 0;
+char *ch;
 	if (ac == 0 || av == NULL)
 	{
 	return (NULL);
 	}
+	for (i = 0; i < ac; i++)
+	{
+	totalLength += strlen(av[i]) + 1;
+	}
+ch = (char *)malloc(totalLength + 1);
 	if (ch == NULL)
 	{
 	return (NULL);
