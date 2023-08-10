@@ -24,13 +24,13 @@ char *ptr;
 	{
 	n = strlen(s2);
 	}
-ptr = malloc(sizeof(char) * (strlen(s1) + n) + 1);
+ptr = malloc(sizeof(char) * (strlen(s1) + n + 1));
 	if (ptr == NULL)
 	{
 	return (NULL);
 	}
 strcpy(ptr, s1);
 strncat(ptr, s2, n);
-ptr[(strlen(s1) + n) + 1] = '\0';
+ptr[(strlen(s1) + n + 1) - 1] = '\0';
 return (ptr);
 }
