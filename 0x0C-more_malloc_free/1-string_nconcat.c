@@ -11,7 +11,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-char *ptr = malloc(sizeof(char) * (strlen(s1) + n) + 1);
+char *ptr;
 	if (s1 == NULL)
 	{
 	s1 = "";
@@ -24,12 +24,13 @@ char *ptr = malloc(sizeof(char) * (strlen(s1) + n) + 1);
 	{
 	n = strlen(s2);
 	}
+ptr = malloc(sizeof(char) * (strlen(s1) + n) + 1);
 	if (ptr == NULL)
 	{
 	return (NULL);
 	}
 strcpy(ptr, s1);
 strncat(ptr, s2, n);
-ptr[(strlen(s1) + n + 1) - 1] = '\0';
+ptr[(strlen(s1) + n) + 1] = '\0';
 return (ptr);
 }
