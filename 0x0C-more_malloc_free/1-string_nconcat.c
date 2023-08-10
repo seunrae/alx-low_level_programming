@@ -24,11 +24,12 @@ char *ptr = malloc(strlen(s1) + n + 1);
 	{
 	n = strlen(s2);
 	}
-	if (ptr != NULL)
+	if (ptr == NULL)
 	{
-	strcpy(ptr, s1);
-	strncat(ptr, s2, n);
-	ptr[(strlen(s1) + n + 1) - 1] = '\0';
+	return (NULL);
 	}
+strcpy(ptr, s1);
+strncat(ptr, s2, n);
+ptr[(strlen(s1) + n + 1) - 1] = '\0';
 return (ptr);
 }
