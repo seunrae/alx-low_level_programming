@@ -9,18 +9,20 @@
  */
 int *array_range(int min, int max)
 {
-int elenum = max - min + 1;
-int *arr = malloc(sizeof(int) * elenum);
+int elenum;
+int *arr;
 int i;
 	if (min > max)
 	{
 	return (NULL);
 	}
+elenum = max - min + 1;
+arr = malloc(sizeof(int) * elenum);
 	if (arr == NULL)
 	{
 	return (NULL);
 	}
-	for (i = min; i < elenum; i++)
+	for (i = 0; i < elenum; i++)
 	{
 	arr[i] = min + i;
 	}
