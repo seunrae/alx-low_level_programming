@@ -22,7 +22,7 @@ int i;
 	}
 	for (i = min; i < elenum; i++)
 	{
-	arr[i] = i;
+	arr[i] = min + i;
 	}
 return (arr);
 }
