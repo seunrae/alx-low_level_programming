@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "dog.h"
 /**
- *
- *
+ * print_dog - check the code
+ * @d: input parameter
  */
 void print_dog(struct dog *d)
 {
