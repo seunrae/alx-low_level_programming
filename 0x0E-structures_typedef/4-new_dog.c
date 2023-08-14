@@ -25,8 +25,8 @@ dog->name = strdup(name);
 dog->owner = strdup(owner);
 	if (dog->owner == NULL)
 	{
-	free(dog->name);
 	free(dog);
+	free(dog->name);
 	return (NULL);
 	}
 dog->age = age;
