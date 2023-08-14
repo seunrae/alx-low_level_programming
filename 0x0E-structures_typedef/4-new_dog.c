@@ -17,18 +17,18 @@ dog_t *dog = (dog_t *)malloc(sizeof(dog_t));
 	return (NULL);
 	}
 dog->name = strdup(name);
-if (dog->name == NULL)
-{
-free(dog);
-return (NULL);
-}
+	if (dog->name == NULL)
+	{
+	free(dog);
+	return (NULL);
+	}
 dog->owner = strdup(owner);
-if (dog->owner == NULL)
-{
-free(dog->name);
-free(dog);
-return (NULL);
-}
+	if (dog->owner == NULL)
+	{
+	free(dog->name);
+	free(dog);
+	return (NULL);
+	}
 dog->age = age;
 return (dog);
 }
