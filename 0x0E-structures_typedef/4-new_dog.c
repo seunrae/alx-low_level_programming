@@ -22,12 +22,13 @@ if (dog->name == NULL)
 free(dog);
 return (NULL);
 }
-dog->age = age;
 dog->owner = strdup(owner);
 if (dog->owner == NULL)
 {
+free(dog->name);
 free(dog);
 return (NULL);
 }
+dog->age = age;
 return (dog);
 }
