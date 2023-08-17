@@ -11,7 +11,7 @@ va_list args;
 va_start(args, format);
 	while (format[i])
 	{
-	
+	char *x = va_arg(args, sizeof())
 	
 	}
 va_end(args);
