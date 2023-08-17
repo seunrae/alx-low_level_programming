@@ -20,17 +20,15 @@ va_start(args, n);
 	char *x = va_arg(args, char*);
 		if (x == NULL)
 		{
-		puts("(nil)");
+		printf("(nil)");
 		}
-		while (*x != '\0')
+		else
 		{
-		putchar(*x);
-		x++;
+		printf("%s", x);
 		}
-		while (*separator != '\0')
+		if (i < n - 1 && separator != NULL)
 		{
-		putchar(*separator);
-		separator++;
+		printf("%s", separator);
 		}
 	}
 va_end(args);
