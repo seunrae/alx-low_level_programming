@@ -33,5 +33,6 @@ va_start(args, n);
 		separator++;
 		}
 	}
+va_end(args);
 putchar('\n');
 }
