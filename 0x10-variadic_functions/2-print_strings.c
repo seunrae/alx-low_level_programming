@@ -32,5 +32,5 @@ va_start(args, n);
 		}
 	}
 va_end(args);
-printf('\n');
+printf("\n");
 }
