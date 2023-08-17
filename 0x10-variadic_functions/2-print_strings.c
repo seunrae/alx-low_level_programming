@@ -26,7 +26,7 @@ va_start(args, n);
 		{
 		printf("%s", x);
 		}
-		if (i < n - 1 && separator != NULL)
+		if (i != (n - 1) && separator != NULL)
 		{
 		printf("%s", separator);
 		}
