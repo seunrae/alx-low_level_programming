@@ -3,7 +3,10 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- *
+ * print_listint - function that prints the content of a linked list
+ * and return its number of elements
+ * @h: input parameter
+ * Return: number of elements
  */
 size_t print_listint(const listint_t *h)
 {
