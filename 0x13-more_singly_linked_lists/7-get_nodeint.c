@@ -24,10 +24,11 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 			new = malloc(sizeof(listint_t));
 			if (new == NULL)
 				return (NULL);
-			new = head;
+			*new = *head;
+			return (new);
 		}
 		count++;
 		head = head->next;
 	}
-	return (new);
+	return (NULL);
 }
